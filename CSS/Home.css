@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Inria Sans');
+@import url('https://fonts.googleapis.com/css?family=Inika');
+
+body{
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #FDFBF8;
+    font-family: "Inria Sans";
+}
+
+footer {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 14px;
+    background-color: #DFB33E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    width: 60vw;
+}
+footer img{
+    width: 5vw;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 20px;
+    margin: 10px 2vw;
+}
+
+.menubtn{
+    display: none;
+    cursor: pointer;
+}
+.content1 .closebtn{
+    display: none;
+    cursor: pointer;
+}
+
+.content1{
+    display: flex;
+    background-color: #DFB33E;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 20px 20px;
+    /* margin: auto; */
+}
+
+.nav{
+    display: flex;
+    margin: auto 0;
+    justify-content: right;
+}
+.nav a{
+    font-family: "Inika";
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 15px;
+    color: black;
+    border-radius: 10px;
+}
+img.logo{
+    width: 45px;
+    height: fit-content;
+}
+
+/* active */
+a.active{
+    background-color: black;
+    color: #DFB33E;
+}
+
+.regisbtn{
+    border: 2px solid black;
+}
+
+.nav a:hover{
+    transition: 0.3s;
+    border-bottom: 3px solid black;
+}
+
+
+.recom{
+    display: flex;
+    background-color: #2A2A10;
+    padding: 15vh 3vw;
+    background-image: url('../Assets/pancake.jpg');
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+.recom img{
+    margin: 0 3vw;
+    width: auto;
+    object-fit: cover;
+    object-position: center center;
+    max-width: 45%;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.recom-content{
+    margin: 0 3vw;
+    color: #FAE9B6;
+    max-width: 50%;
+}
+.recom-content h1{
+    font-family: "Inika";
+    font-size: 3vw;
+    margin: 3vh 0;
+    text-shadow: 5px 2px 3px #2A2A10;
+    box-sizing: border-box;
+}
+.recom-content p{
+    margin: 2vh 0;
+    font-size: 2vw;
+    text-shadow: 5px 2px 3px #2A2A10;
+}
+.recom-content a{
+    margin: 4vh 0;
+    padding: 1vh 2vw;
+    max-width: 150px;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #DFB33E;
+    color: #2A2A10;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 1000;
+}
+
+
+
+.div{
+    text-align: center;
+    /* margin-top: 3vh; */
+}
+.promos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.promo-fill{
+    padding: 5vw;
+}
+
+.promo-fill h1{
+    margin: auto;
+    font-family: "Inika";
+    text-shadow: 
+        1px 1px 0 white,
+        -1px 1px 0 white,
+        -1px -1px 0 white,
+        1px -1px 0 white;
+}
+#promo1{
+    background-image: url('../Assets/pancake.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#promo2{
+    background-image: url('../Assets/cakey.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#promo3{
+    background-image: url('../Assets/eggandtoast.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.brief-info{
+    background-color: #2A2A10;
+    color: #FAE9B6;
+    padding: 6vh 3vw;
+    text-align: center;
+    /* font-size: 2vw; */
+}
+.brief-info h1{
+    font-family: "Inika";
+    font-size: 20px;
+}
+.brief-info p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .recom{
+        /* flex-direction: column; */
+        padding: 5vw;
+    }
+
+    .promos{
+        grid-template-columns: auto;
+
+    }
+    .promo-fill{
+        height: 50px;
+    }
+    .promo-fill h1{
+        font-size: 5vw;
+    }
+
+    /* SIDENAV */
+    .menubtn{
+        display: block;
+    }
+    .content1{
+        justify-content: left;
+    }
+    .content1 .closebtn{display: block;}
+    .content1{
+        padding: 0;
+    }
+    .content1 img, .content1 p{
+        margin: auto 0;
+    }
+    .nav{
+        display: block;
+        position: fixed;
+        width: 0;
+        height: 100%;
+        overflow-x: hidden;
+        background-color: #DFB33E;
+        transition: 0.5s;
+    }
+    .nav a{
+        display: block;
+        text-align: center;
+    }
+}

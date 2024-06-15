@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="CSS/product2.css">
+</head>
+<body>
+    
+    <div class="container1">
+        <div class="content1">
+            <img class="logo" src="Assets/egg (1).png">
+            <div id="sidenav" class="nav">
+                <a class="closebtn" onclick="closeNav()">x</a>
+                <a href="Home.html">Home</a>
+                <a class="active" href="product2.html">Product</a>
+                <a href="testimonial.html">Testimonial</a>
+                <a href="aboutus.html">About</a>
+                <a class="regisbtn" href="register.html">Register</a>
+            </div>
+            <p class="menubtn" onclick="openNav()">&#9776; Menu</p>
+        </div>
+    </div>
+
+
+    <div class="container3">
+        <h3>Available Packages</h3>
+        <hr>
+        <div class="content-row">
+            <div class="content-avail">
+                <img src="Assets/birthdaycake.jpg">
+                <div class="content-avail-desc">
+                    <p class="desc-title">Birthday Package</p>
+                    <p>Celebrate your special day with our delightful Birthday Catering Package, designed to make your party a hit.. Our chefs prepare delicious, crowd-pleasing dishes that will impress your guests and make your birthday truly memorable.</p>
+                </div>
+            </div>
+            <div class="content-avail">
+                <img src="Assets/wedding.jpg">
+                <div class="content-avail-desc">
+                    <p class="desc-title">Wedding Package</p>
+                    <p>We understand that every couple has unique tastes and preferences, so we offer a fully customizable menu to suit your theme and style. Our culinary team crafts each dish with love, using only the freshest ingredients to ensure an exceptional dining experience for you and your guests.</p>
+                </div>
+            </div>
+            <div class="content-avail">
+                <img src="Assets/corporatre.jpg">
+                <div class="content-avail-desc">
+                    <p class="desc-title">Corporate Package</p>
+                    <p>Our package offers a range of sophisticated menu options to impress your colleagues and clients. We focus on providing high-quality, delicious food along with impeccable service to ensure your event runs smoothly. Our team works with you to tailor the menu to your specific requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div class="tab">
+            <button class="tablinks" onclick="opentab(event, 'pack1')" id="defaultOpen">Birthday package</button>
+            <button class="tablinks" onclick="opentab(event, 'pack2')">Wedding package</button>
+            <button class="tablinks" onclick="opentab(event, 'pack3')">Corporate package</button>
+        </div>
+        <div id="pack1" class="tabcontent">
+            <div class="menu">
+                <img src="Assets/eggandtoast.jpg">
+                <div class="menu-content">
+                    <p>Perfect Toast and Egg</p>
+                    <p>perfectly toasted bread with cripsy edge with softness of half cooked egg. The yolk is rich and creamy, providing the perfect contrast to the crisp, golden toast.</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="Assets/pancake.jpg">
+                <div class="menu-content">
+                    <p>Fruit Pancake</p>
+                    <p>Fluffy, golden pancakes, a beloved breakfast staple that promises to brighten your morning. Enjoyed with a drizzle of pure maple syrup, a pat of melting butter</p>
+                </div>
+            </div>      
+            <div class="menu">
+                <img src="Assets/cakey.jpeg">
+                <div class="menu-content">
+                    <p>ShortCake</p>
+                    <p>Classic vanilla, rich chocolate, and red velvet, each layered with velvety buttercream. Decorated with elegant designs, from simple to intricate and ornate</p>
+                </div>
+            </div>    
+            <div class="menu">
+                <img src="Assets/icecream.jpeg">
+                <div class="menu-content">
+                    <p>Milkshake</p>
+                    <p>Made with premium ice cream and fresh milk, creating a thick and luscious texture. Topped with a generous swirl of whipped cream and a cherry</p>
+                </div>
+            </div> 
+        </div>
+        <div id="pack2" class="tabcontent">
+            <div class="menu">
+                <img src="Assets/fruitbowl.jpeg">
+                <div class="menu-content">
+                    <p>Fruit bowl</p>
+                    <p>Our vibrant fruit bowl is a refreshing medley of seasonal fruits, including juicy berries, succulent melons, and tropical delights, all freshly cut and beautifully arranged.</p>
+                </div>
+            </div> 
+            <div class="menu">
+                <img src="Assets/roasted.jpg">
+                <div class="menu-content">
+                    <p>Roasted chicken</p>
+                    <p>Experience the comforting flavors of our roasted chicken, seasoned with a blend of herbs and spices and cooked to golden-brown perfection.</p>
+                </div>
+            </div> 
+            <div class="menu">
+                <img src="Assets/skewers.jpeg">
+                <div class="menu-content">
+                    <p>Skewers</p>
+                    <p>Enjoy the savory taste of our expertly grilled skewers, featuring your choice of marinated meats, vegetables, or a combination of both.</p>
+                </div>
+            </div> 
+            <div class="menu">
+                <img src="Assets/tiramusi.jpg">
+                <div class="menu-content">
+                    <p>Tiramisu cups</p>
+                    <p>Layers of espresso-soaked ladyfingers, creamy mascarpone, and a dusting of cocoa powder come together in a perfect harmony of flavors. These individual servings of classic Italian dessert are both elegant and delicious.</p>
+                </div>
+            </div> 
+        </div>
+        <div id="pack3" class="tabcontent">
+            <div class="menu">
+                <img src="Assets/steak.jpg">
+                <div class="menu-content">
+                    <p>Steak and fries</p>
+                    <p>Savor the rich and robust flavors of our perfectly grilled steak, seasoned with a blend of herbs and spices to enhance its natural taste. Tender and juicy, each bite is a testament to our commitment to quality and culinary excellence.</p>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="Assets/drink1.jpeg">
+                <div class="menu-content">
+                    <p>Mojitos</p>
+                    <p>A classic cocktail made with muddled fresh mint, zesty lime, and a splash of sparkling soda. Light, crisp, and invigorating, these drinks are the perfect way to elevate any gathering.</p>
+                </div>
+            </div> 
+            <div class="menu">
+                <img src="Assets/soupp.jpg">
+                <div class="menu-content">
+                    <p>Warm soup</p>
+                    <p>Cozy up with a bowl of our warm soup, crafted from the freshest ingredients and simmered to perfection. Our soups are a comforting and flavorful way to start your meal</p>
+                </div>
+            </div> 
+            <div class="menu">
+                <img src="Assets/tortilawrapped.jpg">
+                <div class="menu-content">
+                    <p>Wrapped tortila</p>
+                    <p>Our wrapped tortillas are a delightful fusion of fresh ingredients and bold flavors, featuring your choice of grilled meats, vegetables, and zesty sauces, all snugly wrapped in a soft tortilla.</p>
+                </div>
+            </div> 
+            
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer.content">
+            <h1>CAteriNgz</h1>
+            <p> Catering service for events of all sizes and styles. Whether you’re planning a lavish wedding, a corporate gala, or an intimate gathering, our team is dedicated to making your event extraordinary.</p>
+            <p>Located at Jl. Orange Square, Kby Lama Barat Kec Kby. Lama, Kota Pota Tangerang, Indonesia 192837</p>
+            <a href="https://www.instagram.com/"><img src="Assets/insta.png"></a>
+            <a href="https://twitter.com/?lang=en"><img src="Assets/twitter.png"></a>
+            <a href="https://web.whatsapp.com/"><img src="Assets/wa.png"></a>
+        </div>
+    </footer>
+
+    <script src="JSS/product.js"></script>
+</body>
+</html>

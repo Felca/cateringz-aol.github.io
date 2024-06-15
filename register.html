@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgiter</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+
+    <div class="parent">
+        <div  onclick="history.back()" class="back-button">
+            <img src="Assets/backbtn.png">
+        </div>
+
+        <!-- ganti nnti -->
+        <div class="register-container">
+            <h1>Register Form</h1>
+            <form method="GET">
+                <div class="text">
+                    <p>email</p>
+                    <input type="email" id="email-data" required>
+                    <p class="errormsg" id="error-email"></p>
+                    
+                    <p>password</p>
+                    <input type="password" id="password-data" required>
+                    <p class="errormsg" id="error-password"></p>
+                    
+                    <p>address</p>
+                    <input type="address" id="address-data" required>
+                    <p class="errormsg" id="error-address"></p>
+        
+                    <p>gender</p>
+                    <select name="gender" id="gender-data" required>
+                        <option value="select">Select a gender</option>
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select>
+                    <p class="errormsg" id="error-gender"></p>
+        
+                    <p>date of birth</p>
+                    <input type="date" id="dob-data" required>
+                    <p class="errormsg" id="error-dob"></p>
+                </div>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement" required>
+                    <label>I agree to the terms of service</label>
+                </div>
+                
+                <button id="btn" type="button" onclick="validationForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="JSS/register.js"></script>
+</body>
+</html>
